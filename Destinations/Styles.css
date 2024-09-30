@@ -1,0 +1,124 @@
+body {
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+    color: white;
+    font-size: 16px;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.navigation {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+main {
+    margin: 5% 14%;
+}
+
+main .hp {
+    font-size: 2em;
+    letter-spacing: 4px;
+    padding: 0;
+    margin: 0;
+}
+
+main .hp strong {
+    color: var(--blue-300);
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+main .container {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.nav {
+    margin-top: 0px
+}
+
+.nav a {
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: var(--blue-300)
+}
+
+.nav a:hover {
+    border-bottom: 2px solid var(--blue-300);
+    cursor: pointer;
+}
+
+.nav p {
+    display: inline-block;
+    margin-right: 20px;
+    color: var(--blue-300);
+}
+
+.nav .selected {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.nav .selected:hover {
+    cursor: auto;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.huge {
+    font-size: 6em;
+    margin: 10px 0;
+    padding: 0;
+    font-family: "Bellefair", sans-serif;
+}
+
+.text .paragraph {
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: var(--blue-300);
+}
+
+hr {
+    border: 1px solid #979797
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: var(--blue-300);
+    font-family: "Bellefair";
+}
+
+.parent h1 {
+    color: white;
+    font-weight: 200;
+}
+
+@media (max-width: 750px) {
+
+    body {
+        overflow: auto;
+        background-image: url(../assets/destination/background-destination-tablet.jpg);
+    }
+
+    main {
+        margin: 5%;
+    }
+    main .container {
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main img {
+        margin: 5% auto;
+        width: 300px;
+        height: 300px;
+    }
+
+    .text {
+        margin: 0 10%;
+    }
+}

@@ -1,0 +1,113 @@
+body {
+    background-image: url(../assets/technology/background-technology-desktop.jpg);
+    background-color: rgba(255, 255, 255, 0.01);
+}
+
+.navigation {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+main {
+    margin: 5% 0 0 14%;
+}
+
+main .hp {
+    font-size: 2em;
+    letter-spacing: 4px;
+    padding: 0;
+    margin: 0;
+}
+
+main .hp strong {
+    color: var(--blue-300);
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+main .container {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 10% 30% 40%;
+    gap: 5%
+}
+
+.text {
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -10%;
+}
+
+.text h1 {
+    font-weight: 200;
+    color: var(--blue-300);  
+    font-family: "Bellefair";
+    height: 100%;
+}
+
+.huge {
+    font-size: 3em;
+    margin: 10px 0;
+    padding: 0;
+    font-family: "Bellefair", sans-serif;
+}
+
+.text .paragraph {
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: var(--blue-300);
+    font-size: 1.5em
+}
+
+a > .selected {
+    color: white;
+}
+
+a > .selected:hover {
+    color: white;
+    cursor: auto;
+}
+
+img {
+    justify-self: flex-end;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.links button {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 1px solid var(--blue-300);
+    color: white;
+    font-size: 2rem;
+    border-radius: 50%;
+    font-weight: 200;
+}
+
+.links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.links .selected {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.links .selected:hover {
+    border: 0px solid transparent;
+    cursor: auto;
+    color: black;
+}
+
+.links button:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}

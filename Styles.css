@@ -1,0 +1,213 @@
+:root {
+    --blue-300: #a2a6c1;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-image: url(./assets/home/background-home-desktop.jpg);
+    background-size: cover;
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.ham, .close {
+    display: none;
+}
+
+header {
+    display: flex;
+    height: 8.5em;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+
+.border {
+    border-bottom: 1px solid #979797;
+    width: 40%;
+    z-index: 3;
+    position: absolute;
+    margin: 13%;
+}
+
+.navigation {
+    backdrop-filter: blur(80px);
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 50%;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+}
+
+.selected {
+    border-bottom: 3px solid white;
+    padding-bottom: 37px;
+}
+
+.navigation .selected:hover {
+    border-bottom: 3px solid white;
+    padding-bottom: 37px;
+    cursor:auto;
+}
+
+.navigation a, .navigation strong {
+    letter-spacing: 0.2em;
+    padding-bottom: 37px;
+}
+
+.navigation p {
+    margin-right: 5%;
+}
+
+.navigation a:hover {
+    cursor: pointer;
+    border-bottom: 3px solid var(--blue-300);
+}
+
+.navigation strong {
+    margin-right: 10px;
+}
+
+header img {
+    width: 4em;
+    height: 4em;
+    margin: 0 4%;
+}
+
+main {
+    width: 100%;
+    height: 85%;
+}
+
+.content {
+    margin: 10% 10% 5% 10%;
+    display: flex;
+    width: 100%;
+}
+
+.content h2 {
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: var(--blue-300);
+    font-size: 2em;
+}
+
+.content h1 {
+    font-size: 9em;
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+    font-family: "Bellefair", serif;
+}
+
+.content p {
+    color: var(--blue-300);
+    line-height: 30px;
+}
+
+.text {
+    width: 400px
+}
+
+.content button {
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    border: none;
+    font-size: 2em;
+    font-family: 'Bellefair';
+}
+
+.content button:hover {
+    outline: 100px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+.sh {
+    align-self: center;
+    position: absolute;
+    right: 20%;
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 750px) {
+
+    body {
+        background-image: url(./assets/home/background-home-tablet.jpg);
+        font-size: 14px;
+    }
+
+    header {
+        justify-content: flex-start;
+    }
+
+    .navigation {
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(80px);
+        height: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+        width: 80%;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+    }
+
+    .border{ 
+        display: none;
+        border: none;
+    }
+
+    header img {
+        margin: 0 6%;
+    }
+
+    main {
+        height: fit-content;
+    }
+
+    .content button{
+        width: 10em;
+        height: 10em;
+
+    }
+
+    .content > a {
+        display: inline-block;
+        margin: 55% 8%;
+    }
+
+    .content {
+        margin: 5% 0; 
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .text {
+        text-align: center;
+    }
+}
